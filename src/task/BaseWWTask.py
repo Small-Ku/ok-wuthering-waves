@@ -224,6 +224,8 @@ class BaseWWTask(BaseTask, FindFeature, OCR):
             logger.debug(f'searching for echo {i} {float(color_percent):.3f} {float(highest_percent):.3f}')
             # self.click_relative(0.25, 0.25)
             self.send_key('a', down_time=0.05)
+            if self.walk_until_f(target_text=self.absorb_echo_text(), raise_if_not_found=False):
+              return True
             self.sleep(0.5)
 
         if highest_percent > 0.0001:
