@@ -1,0 +1,8 @@
+{
+	"executionEnvironments": [
+		{
+			"root": "./.pixi/envs/default"
+		}
+	],
+	"pythonPlatform": "Windows"
+}
