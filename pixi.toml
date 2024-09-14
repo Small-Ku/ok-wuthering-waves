@@ -1,7 +1,7 @@
 [project]
 name = "ok-wuthering-waves"
 version = "0.2.17"
-description = "Automation for Wuthering Waves "
+description = "Automation for Wuthering Waves"
 authors = ["ok-oldking <firedcto@gmail.com>"]
 channels = ["conda-forge"]
 platforms = ["win-64"]
@@ -11,7 +11,14 @@ platforms = ["win-64"]
 [dependencies]
 python = ">=3.11"
 openvino = ">=2024.3.0"
+psutil = "*"
+typing-extensions = ">=4.11.0"
+numpy=">=1.26.4"
 
 [pypi-dependencies]
 rapidocr-openvino = ">=1.3.24, <2"
-ok-script = ">=0.0.185"
+ok-script = ">=0.0.254"
+PySide6-Fluent-Widgets = ">=1.5.5"
+pycaw = "*"
+WMI = ">=1.5.1"
+opencv-contrib-python = ">=4.10.0.84"
