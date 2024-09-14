@@ -1,18 +1,18 @@
 updates/
 working/
+update/
 tesseract
 models
 fonts
-_internal/
 # Byte-compiled / optimized / DLL files
 .idea/
 __pycache__/
 *.py[cod]
 *$py.class
 configs/
+paddle_model/
 ok/
 ok
-*.exe
 md5.txt
 update.bat
 click_screenshots/
@@ -45,6 +45,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 venv/
+python/
 
 # PyInstaller
 # Usually these files are written by a python script from a template
