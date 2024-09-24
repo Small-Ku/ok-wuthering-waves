@@ -44,16 +44,15 @@ class CombatCheck:
         if is_pure_black(self.frame):
             logger.error('getting a pure black frame for unknown reason, reset_to_false return true')
             return True
-        if recheck and time.time() - self.last_out_of_combat_time > 2.1:
+        if recheck:
             logger.info('out of combat start double check')
             if self.debug:
                 self.screenshot('out of combat start double check')
-            self.last_out_of_combat_time = time.time()
-            return True
-        else:
-            self.out_of_combat_reason = reason
-            self.do_reset_to_false()
-            return False
+            if self.wait_until(self.check_health_bar, time_out=1.2, wait_until_before_delay=0):
+                return True
+        self.out_of_combat_reason = reason
+        self.do_reset_to_false()
+        return False
 
     def do_reset_to_false(self):
         self._in_combat = False
@@ -102,6 +101,8 @@ class CombatCheck:
         if self.boss_lv_box is not None:
             current = self.boss_lv_box.crop_frame(self.frame)
         else:
+            self.boss_lv_template = None
+            self.boss_lv_box = None
             current = None
         max_val = 0
         if current is not None:
@@ -146,42 +147,40 @@ class CombatCheck:
         start = time.time()
         target_enemy = self.find_one('target_enemy_white', box=self.target_area_box,
                                      use_gray_scale=True, threshold=0.83,
-                                     frame_processor=process_target_enemy_area)
+                                     frame_processor=keep_only_white)
         # if self.debug and target_enemy is not None:
         #     self.screenshot('find_target_enemy')
         logger.debug(f'find_target_enemy {target_enemy} {time.time() - start}')
         return target_enemy is not None
 
-    def in_combat(self, rechecked=False):
+    def in_combat(self, check_team=True):
         if self.in_liberation or self.recent_liberation():
-            # logger.debug('in liberation return True')
             return True
         if self._in_combat:
             now = time.time()
             if now - self.last_combat_check > self.combat_check_interval:
                 self.last_combat_check = now
-                if not self.in_team()[0]:
+                if check_team and not self.in_team()[0]:
+                    logger.info('not in team break out of combat')
                     return self.reset_to_false(recheck=False, reason="not in team")
                 if self.check_count_down():
                     return True
                 if self.boss_lv_template is not None:
-                    if self.wait_until(self.check_boss, time_out=2, wait_until_before_delay=0):
+                    if self.check_boss():
                         return True
-                    else:
-                        return self.reset_to_false(recheck=False, reason="boss disappear")
                 if self.check_health_bar():
                     return True
                 if self.ocr_lv_text():
                     return True
                 if self.target_enemy():
                     return True
-                logger.error('target_enemy failed, break out of combat')
-                return self.reset_to_false(reason='target enemy failed')
+                logger.error('target_enemy failed, try recheck break out of combat')
+                return self.reset_to_false(recheck=True, reason='target enemy failed')
             else:
                 return True
         else:
             start = time.time()
-            in_combat = self.in_team()[0] and self.check_health_bar()
+            in_combat = ((not check_team) or self.in_team()[0]) and self.check_health_bar()
             if in_combat:
                 self.target_enemy(wait=False)
                 if self.boss_lv_template is None:
@@ -269,7 +268,7 @@ class CombatCheck:
 count_down_re = re.compile(r'\d\d')
 
 
-def process_target_enemy_area(frame):
+def keep_only_white(frame):
     frame[frame != 255] = 0
     return frame
 
