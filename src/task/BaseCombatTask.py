@@ -51,6 +51,33 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
         self.combat_start = 0
 
         self.char_texts = ['char_1_text', 'char_2_text', 'char_3_text']
+        self.multiplayer_check_interval = 3
+        self._in_multiplayer = False
+        self._multiplayer_last_check = 0
+
+    def check_in_multiplayer(self):
+        self._multiplayer_last_check = time.time()
+        self._in_multiplayer = self.find_one('multiplayer_world_mark',
+                                             threshold=0.75) is not None
+        return self._in_multiplayer
+
+    def send_key_and_wait_animation(self, key, check_function, total_wait=10, animation_wait=5):
+        start = time.time()
+        animation_start = 0
+        while time.time() - start < total_wait and (
+                animation_start == 0 or time.time() - animation_start < animation_wait):
+            if check_function():
+                if animation_start > 0:
+                    self.in_liberation = False
+                    return
+                else:
+                    self.send_key(key, interval=0.2)
+            else:
+                if animation_start == 0:
+                    animation_start = time.time()
+                self.in_liberation = True
+                self.next_frame()
+        logger.info(f'send_key_and_wait_animation timed out {key}')
 
     def raise_not_in_combat(self, message, exception_type=None):
         logger.error(message)
@@ -131,7 +158,7 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
             if char == current_char:
                 priority = Priority.CURRENT_CHAR
             else:
-                priority = char.get_switch_priority(current_char, has_intro)
+                priority = char.get_switch_priority(current_char, has_intro, target_low_con)
                 logger.info(
                     f'switch_next_char priority: {char} {priority} {char.current_con} target_low_con {target_low_con}')
             if target_low_con:
@@ -190,6 +217,7 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
 
         if post_action:
             post_action()
+        self.next_frame()
         logger.info(f'switch_next_char end {(current_char.last_switch_time - start):.3f}s')
 
     def get_liberation_key(self):
@@ -349,10 +377,10 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
     def get_resonance_percentage(self):
         return self.calculate_color_percentage(white_color, self.get_box_by_name('box_resonance'))
 
-    def is_con_full(self):
-        return self.get_current_con() == 1
+    def is_con_full(self, char_config=None):
+        return self.get_current_con(char_config) == 1
 
-    def get_current_con(self):
+    def get_current_con(self, char_config=None):
         box = self.box_of_screen_scaled(3840, 2160, 1422, 1939, to_x=1566, to_y=2076, name='con_full',
                                         hcenter=True)
         box.confidence = 0
@@ -361,7 +389,9 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
         percent = 0
         max_is_full = False
         color_index = -1
-        target_index = self.config.get('_ring_color_index', -1)
+        target_index = -1
+        if char_config:
+            target_index = char_config.get('_ring_color_index', target_index)
         cropped = box.crop_frame(self.frame)
         for i in range(len(con_colors)):
             if target_index != -1 and i != target_index:
@@ -376,20 +406,19 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
             if area > max_area:
                 max_area = int(area)
         if max_is_full:
+            percent = 1
+        if max_is_full and char_config:
             self.logger.info(
-                f'is_con_full found a full ring {self.config.get("_full_ring_area", 0)} -> {max_area}  {color_index}')
-            self.config['_full_ring_area'] = max_area
-            self.config['_ring_color_index'] = color_index
+                f'is_con_full found a full ring {char_config.get("_full_ring_area", 0)} -> {max_area}  {color_index}')
+            char_config['_full_ring_area'] = max_area
+            char_config['_ring_color_index'] = color_index
             self.logger.info(
-                f'is_con_full2 found a full ring {self.config.get("_full_ring_area", 0)} -> {max_area}  {color_index}')
-        if self.config.get('_full_ring_area', 0) > 0:
-            percent = max_area / self.config['_full_ring_area']
+                f'is_con_full2 found a full ring {char_config.get("_full_ring_area", 0)} -> {max_area}  {color_index}')
+        if percent != 1 and char_config and char_config.get('_full_ring_area', 0) > 0:
+            percent = max_area / char_config['_full_ring_area']
         if not max_is_full and percent >= 1:
             self.logger.warning(
                 f'is_con_full not full but percent greater than 1, set to 0.99, {percent} {max_is_full}')
-            # self.task.screenshot(
-            #     f'is_con_full not full but percent greater than 1, set to 0.99, {percent} {max_is_full}',
-            #     cropped)
             percent = 0.99
         if percent > 1:
             self.logger.error(f'is_con_full percent greater than 1, set to 1, {percent} {max_is_full}')
@@ -406,8 +435,16 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
             percent = 1
         return percent
 
+    def in_multiplayer(self):
+        if self._in_multiplayer or self._multiplayer_last_check == 0:
+            return self.check_in_multiplayer()
+        if not self._in_multiplayer and time.time() - self._multiplayer_last_check > self.multiplayer_check_interval:
+            return self.check_in_multiplayer()
+        return self._in_multiplayer
+
     def in_team(self):
-        start = time.time()
+        if self.in_multiplayer():
+            return False, -1, -1
         c1 = self.find_one('char_1_text',
                            threshold=0.75)
         c2 = self.find_one('char_2_text',
