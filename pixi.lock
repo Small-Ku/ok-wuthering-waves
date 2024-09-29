@@ -81,15 +81,15 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/fd/5b/8f0c4a5bb9fd491c277c21eff7ccae71b47d43c4446c9d0c6cff2fe8c2c4/gitdb-4.0.11-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e9/bd/cc3a402a6439c15c3d4294333e13042b915bbeab54edc457c723931fed3f/GitPython-3.1.43-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/98/52/098ea64205a590c56c8895174a182eebd3daf907d21486dfd59ede29a236/ok_script-0.0.270-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/03/ea/b9acdb44adc395098fb18701388c2edf5bb4205a31be885cd411595c2c15/ok_script-0.0.275-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a7/9e/7110d2c5d543ab03b9581dbb1f8e2429863e44e0c9b4960b766f230c1279/opencv_contrib_python-4.10.0.84-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/6c/fab8113424af5049f85717e8e527ca3773299a3c6b02506e66436e19874f/opencv_python-4.10.0.84-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/74/0a/d4ce3c44bca8635bd29a2eab5aa181b654a734a29b263ca8efe013beea98/pillow-10.4.0-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/c2/e2/89e3e096d8926f19cbcf2991ae86d19e6705ea75ad0212862461cb4b83d8/pycaw-20240210-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a1/f0/760e614b84dd4d8f03dd5432dda100d699e23074c263b38b6c117adc8395/pyclipper-1.3.0.post5-cp312-cp312-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/c2/ee/15cb7e277b3c88806d9baaa334b7923b2f1bdc461b38461bc70d368a8481/PySide6-6.7.2-cp39-abi3-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/8a/47/35794fc8c8cab42d924ac0287dfe489201c3743066a1eea34cdde2926cc1/PySide6_Addons-6.7.2-cp39-abi3-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/69/55/cff72ecb1d36422e7f41f8d64d49c7c7e1f8dc6648e2b30ba72950883444/PySide6_Essentials-6.7.2-cp39-abi3-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/69/f0/18c6b7f5087eec0d673eb8703c3e9eb76d62cfc427b015d4fc833287c1c4/PySide6-6.7.3-cp39-abi3-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/3e/ca/1b34d0785298f86bed27582103760f67f7f78d9e2006405e256e9c770993/PySide6_Addons-6.7.3-cp39-abi3-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/0b/18/8679adff0b7a6ccacc2e0febd15c1b78d02abc0180b56007c24e94c9d582/PySide6_Essentials-6.7.3-cp39-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/e5/3b/0720f4768b9de1689ae16e56d909e877955ba1447525447cb955299bf51b/PySide6_Fluent_Widgets-1.6.5-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/da/fb/cde0fa7888e3f2a90927df1ef56651173b1a07f0398abe6b456750b7f109/PySideSix_Frameless_Window-0.4.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/83/1c/25b79fc3ec99b19b0a0730cc47356f7e2959863bf9f3cd314332bddb4f68/pywin32-306-cp312-cp312-win_amd64.whl
@@ -97,7 +97,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/c0/11/454df7cd8ac7f781b3010c674eddf8ce1377809ffd7938ab7bf0db9d4e48/rapidocr_openvino-1.3.25-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7b/b3/857afd9dfbfc554f10d683ac412eac6fa260d1f4cd2967ecb655c57e831a/shapely-2.0.6-cp312-cp312-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/11/9f/50ed659cbce4664374707bf416e2fac2ff94de3253ab093d5dee7f53e02f/shiboken6-6.7.2-cp39-abi3-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/3e/cc/e2b95aedb5e5f900c20325ef347e51c7750d18369d157f9b7da99943dae1/shiboken6-6.7.3-cp39-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a7/a5/10f97f73544edcdef54409f1d839f6049a0d79df68adbc1ceb24d1aaca42/smmap-5.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ce/d9/5f4c13cecde62396b0d3fe530a50ccea91e7dfc1ccf0e09c228841bb5ba8/urllib3-2.2.3-py3-none-any.whl
@@ -965,9 +965,9 @@ packages:
   timestamp: 1707226412944
 - kind: pypi
   name: ok-script
-  version: 0.0.270
-  url: https://files.pythonhosted.org/packages/98/52/098ea64205a590c56c8895174a182eebd3daf907d21486dfd59ede29a236/ok_script-0.0.270-py3-none-any.whl
-  sha256: 7068560ca531333e58126504149125deb9bf23870b794006e1d21b5987fbf799
+  version: 0.0.275
+  url: https://files.pythonhosted.org/packages/03/ea/b9acdb44adc395098fb18701388c2edf5bb4205a31be885cd411595c2c15/ok_script-0.0.275-py3-none-any.whl
+  sha256: dab972ccedd35b9fd12dbd8d7ad6e3bc7945cd4dd23ce6b21998ddfc9e01209a
   requires_dist:
   - pywin32>=306
   - darkdetect>=0.8.0
@@ -1201,30 +1201,30 @@ packages:
   sha256: 2ce6e0a6ab32182c26537965cf521822cd11a28a7ffcef48635a94c6ca8559ef
 - kind: pypi
   name: pyside6
-  version: 6.7.2
-  url: https://files.pythonhosted.org/packages/c2/ee/15cb7e277b3c88806d9baaa334b7923b2f1bdc461b38461bc70d368a8481/PySide6-6.7.2-cp39-abi3-win_amd64.whl
-  sha256: f73ae0de77d67f51ca3ce8207b12d3a5fa0107d3d5b6e4aeb3b53ee842b0927a
+  version: 6.7.3
+  url: https://files.pythonhosted.org/packages/69/f0/18c6b7f5087eec0d673eb8703c3e9eb76d62cfc427b015d4fc833287c1c4/PySide6-6.7.3-cp39-abi3-win_amd64.whl
+  sha256: 3ac8dcb4ca82d276e319f89dd99098b01061f255a2b9104216504aece5e0faf8
   requires_dist:
-  - shiboken6==6.7.2
-  - pyside6-essentials==6.7.2
-  - pyside6-addons==6.7.2
+  - shiboken6==6.7.3
+  - pyside6-essentials==6.7.3
+  - pyside6-addons==6.7.3
   requires_python: <3.13,>=3.9
 - kind: pypi
   name: pyside6-addons
-  version: 6.7.2
-  url: https://files.pythonhosted.org/packages/8a/47/35794fc8c8cab42d924ac0287dfe489201c3743066a1eea34cdde2926cc1/PySide6_Addons-6.7.2-cp39-abi3-win_amd64.whl
-  sha256: ebf549eb25998665d8e4ec24014fbbd37bebc5ecdcb050b34db1e1c03e1bf81d
+  version: 6.7.3
+  url: https://files.pythonhosted.org/packages/3e/ca/1b34d0785298f86bed27582103760f67f7f78d9e2006405e256e9c770993/PySide6_Addons-6.7.3-cp39-abi3-win_amd64.whl
+  sha256: d8a19c2b2446407724c81c33ebf3217eaabd092f0f72da8130c17079e04a7813
   requires_dist:
-  - shiboken6==6.7.2
-  - pyside6-essentials==6.7.2
+  - shiboken6==6.7.3
+  - pyside6-essentials==6.7.3
   requires_python: <3.13,>=3.9
 - kind: pypi
   name: pyside6-essentials
-  version: 6.7.2
-  url: https://files.pythonhosted.org/packages/69/55/cff72ecb1d36422e7f41f8d64d49c7c7e1f8dc6648e2b30ba72950883444/PySide6_Essentials-6.7.2-cp39-abi3-win_amd64.whl
-  sha256: 0111d5fa8cf826de3ca9d82fed54726cce116d57f454f88a6467578652032d69
+  version: 6.7.3
+  url: https://files.pythonhosted.org/packages/0b/18/8679adff0b7a6ccacc2e0febd15c1b78d02abc0180b56007c24e94c9d582/PySide6_Essentials-6.7.3-cp39-abi3-win_amd64.whl
+  sha256: f0950fcdcbcd4f2443336dc6a5fe692172adc225f876839583503ded0ab2f2a7
   requires_dist:
-  - shiboken6==6.7.2
+  - shiboken6==6.7.3
   requires_python: <3.13,>=3.9
 - kind: pypi
   name: pyside6-fluent-widgets
@@ -1352,9 +1352,9 @@ packages:
   requires_python: '>=3.7'
 - kind: pypi
   name: shiboken6
-  version: 6.7.2
-  url: https://files.pythonhosted.org/packages/11/9f/50ed659cbce4664374707bf416e2fac2ff94de3253ab093d5dee7f53e02f/shiboken6-6.7.2-cp39-abi3-win_amd64.whl
-  sha256: 9024e6afb2af1568ebfc8a5d07e4ff6c8829f40923eeb28901f535463e2b6b65
+  version: 6.7.3
+  url: https://files.pythonhosted.org/packages/3e/cc/e2b95aedb5e5f900c20325ef347e51c7750d18369d157f9b7da99943dae1/shiboken6-6.7.3-cp39-abi3-win_amd64.whl
+  sha256: 5f29325dfa86fde0274240f1f38e421303749d3174ce3ada178715b5f4719db9
   requires_python: <3.13,>=3.9
 - kind: pypi
   name: six
@@ -1626,7 +1626,7 @@ packages:
   sha256: c378304044321e74c6acd483674f404864a229ab2a8841bf9515bc1a30783e99
   md5: 0296a4de2235cad9ad3112134f8e4519
   depends:
-  - libxcb >=1.16,<1.17.0a0
+  - libxcb >=1.16,<2.0.0a0
   - m2w64-gcc-libs
   - m2w64-gcc-libs-core
   - xorg-kbproto
