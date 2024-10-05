@@ -10,8 +10,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/bzip2-1.0.8-h2466b09_7.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/ca-certificates-2024.8.30-h56e8100_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/intel-openmp-2024.2.1-h57928b3_1083.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/khronos-opencl-icd-loader-2023.04.17-h64bf75a_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libabseil-20240116.2-cxx17_he0c23c2_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/khronos-opencl-icd-loader-2024.05.08-hc70643c_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libabseil-20240722.0-cxx17_he0c23c2_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libblas-3.9.0-24_win64_mkl.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libcblas-3.9.0-24_win64_mkl.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libexpat-2.6.3-he0c23c2_0.conda
@@ -19,42 +19,34 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/libhwloc-2.11.1-default_h8125262_1000.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libiconv-1.17-hcfcfb64_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/liblapack-3.9.0-24_win64_mkl.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-2024.4.0-hfe1841e_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-auto-batch-plugin-2024.4.0-h04f32e0_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-auto-plugin-2024.4.0-h04f32e0_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-dev-2024.4.0-h04f32e0_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-hetero-plugin-2024.4.0-h372dad0_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-intel-cpu-plugin-2024.4.0-hfe1841e_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-intel-gpu-plugin-2024.4.0-hfe1841e_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-ir-frontend-2024.4.0-h372dad0_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-onnx-frontend-2024.4.0-hdeef14f_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-paddle-frontend-2024.4.0-hdeef14f_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-python-2024.4.0-py312hddbe33a_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-pytorch-frontend-2024.4.0-he0c23c2_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-tensorflow-frontend-2024.4.0-h7c40eac_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-tensorflow-lite-frontend-2024.4.0-he0c23c2_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libprotobuf-4.25.3-h47a098d_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-2024.4.0-hfe1841e_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-auto-batch-plugin-2024.4.0-h04f32e0_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-auto-plugin-2024.4.0-h04f32e0_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-dev-2024.4.0-h04f32e0_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-hetero-plugin-2024.4.0-h372dad0_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-intel-cpu-plugin-2024.4.0-hfe1841e_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-intel-gpu-plugin-2024.4.0-hfe1841e_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-ir-frontend-2024.4.0-h372dad0_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-onnx-frontend-2024.4.0-h5707d70_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-paddle-frontend-2024.4.0-h5707d70_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-python-2024.4.0-py312hddbe33a_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-pytorch-frontend-2024.4.0-he0c23c2_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-tensorflow-frontend-2024.4.0-hf4e5e90_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libopenvino-tensorflow-lite-frontend-2024.4.0-he0c23c2_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libprotobuf-5.27.5-hcaed137_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libsqlite-3.46.1-h2466b09_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libxcb-1.16-h013a479_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libxml2-2.12.7-h0f24e4e_4.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libzlib-1.3.1-h2466b09_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/m2w64-gcc-libgfortran-5.3.0-6.tar.bz2
-      - conda: https://conda.anaconda.org/conda-forge/win-64/m2w64-gcc-libs-5.3.0-7.tar.bz2
-      - conda: https://conda.anaconda.org/conda-forge/win-64/m2w64-gcc-libs-core-5.3.0-7.tar.bz2
-      - conda: https://conda.anaconda.org/conda-forge/win-64/m2w64-gmp-6.1.0-2.tar.bz2
-      - conda: https://conda.anaconda.org/conda-forge/win-64/m2w64-libwinpthread-git-5.0.0.4634.697f757-2.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libzlib-1.3.1-h2466b09_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/mkl-2024.1.0-h66d3029_694.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/msys2-conda-epoch-20160418-1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/numpy-1.26.4-py312h8753938_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/openssl-3.3.2-h2466b09_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/openvino-2024.4.0-he0c23c2_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/openvino-2024.4.0-he0c23c2_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/openvino-telemetry-2024.1.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/packaging-24.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/psutil-6.0.0-py312h4389bb4_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/pthread-stubs-0.4-hcd874cb_1001.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/pthreads-win32-2.9.1-hfa6e2cd_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/pugixml-1.14-h63175ca_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/python-3.12.6-hce54a09_1_cpython.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/python-3.12.7-hce54a09_0_cpython.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/python_abi-3.12-5_cp312.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/snappy-1.2.1-h23299a8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/tbb-2021.13.0-hc790b64_0.conda
@@ -62,17 +54,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/tk-8.6.13-h5226925_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.12.2-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.12.2-pyha770c72_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2024a-h8827d51_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2024b-hc8b5060_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/ucrt-10.0.22621.0-h57928b3_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h8a93ad2_21.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.40.33810-ha82c5b3_21.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vs2015_runtime-14.40.33810-h3bf8584_21.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/xorg-kbproto-1.0.7-hcd874cb_1002.tar.bz2
-      - conda: https://conda.anaconda.org/conda-forge/win-64/xorg-libx11-1.8.9-h0076a8d_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/xorg-libxau-1.0.11-hcd874cb_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/xorg-libxdmcp-1.1.3-hcd874cb_0.tar.bz2
-      - conda: https://conda.anaconda.org/conda-forge/win-64/xorg-xextproto-7.3.0-hcd874cb_1003.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/xorg-xproto-7.0.31-hcd874cb_1007.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/xz-5.2.6-h8d14728_0.tar.bz2
       - pypi: https://files.pythonhosted.org/packages/12/90/3c9ff0512038035f59d279fddeb79f5f1eccd8859f06d6163c58798b9487/certifi-2024.8.30-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b6/7c/8debebb4f90174074b827c63242c23851bdf00a532489fba57fef3416e40/charset_normalizer-3.3.2-cp312-cp312-win_amd64.whl
@@ -81,7 +67,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/fd/5b/8f0c4a5bb9fd491c277c21eff7ccae71b47d43c4446c9d0c6cff2fe8c2c4/gitdb-4.0.11-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e9/bd/cc3a402a6439c15c3d4294333e13042b915bbeab54edc457c723931fed3f/GitPython-3.1.43-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/03/ea/b9acdb44adc395098fb18701388c2edf5bb4205a31be885cd411595c2c15/ok_script-0.0.275-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/31/16/02999abff0c5b9c28b0494251950f770435de2fd48fcac5d4eebbe4d09c1/ok_script-0.0.286-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a7/9e/7110d2c5d543ab03b9581dbb1f8e2429863e44e0c9b4960b766f230c1279/opencv_contrib_python-4.10.0.84-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/6c/fab8113424af5049f85717e8e527ca3773299a3c6b02506e66436e19874f/opencv_python-4.10.0.84-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/74/0a/d4ce3c44bca8635bd29a2eab5aa181b654a734a29b263ca8efe013beea98/pillow-10.4.0-cp312-cp312-win_amd64.whl
@@ -90,9 +76,9 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/69/f0/18c6b7f5087eec0d673eb8703c3e9eb76d62cfc427b015d4fc833287c1c4/PySide6-6.7.3-cp39-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/3e/ca/1b34d0785298f86bed27582103760f67f7f78d9e2006405e256e9c770993/PySide6_Addons-6.7.3-cp39-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/0b/18/8679adff0b7a6ccacc2e0febd15c1b78d02abc0180b56007c24e94c9d582/PySide6_Essentials-6.7.3-cp39-abi3-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/e5/3b/0720f4768b9de1689ae16e56d909e877955ba1447525447cb955299bf51b/PySide6_Fluent_Widgets-1.6.5-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/20/2c/13ae061348e28e7f261302e34a56e09dbf101f955e8d9d47c0282e80c43a/PySide6_Fluent_Widgets-1.6.6-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/da/fb/cde0fa7888e3f2a90927df1ef56651173b1a07f0398abe6b456750b7f109/PySideSix_Frameless_Window-0.4.3-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/83/1c/25b79fc3ec99b19b0a0730cc47356f7e2959863bf9f3cd314332bddb4f68/pywin32-306-cp312-cp312-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/9c/11/c56e771d2cdbd2dac8e656edb2c814e4b2239da2c9028aa7265cdfff8aed/pywin32-307-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/0c/e8/4f648c598b17c3d06e8753d7d13d57542b30d56e6c2dedf9c331ae56312e/PyYAML-6.0.2-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/c0/11/454df7cd8ac7f781b3010c674eddf8ce1377809ffd7938ab7bf0db9d4e48/rapidocr_openvino-1.3.25-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl
@@ -228,13 +214,12 @@ packages:
   timestamp: 1723739573141
 - kind: conda
   name: khronos-opencl-icd-loader
-  version: 2023.04.17
-  build: h64bf75a_1
-  build_number: 1
+  version: 2024.05.08
+  build: hc70643c_0
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/khronos-opencl-icd-loader-2023.04.17-h64bf75a_1.conda
-  sha256: c9a98f54a7b0dc8360285c71c3a5623f05276fd77ad10b37b3fa7118e5733364
-  md5: 796b3630250f121b56cc70b616b942a8
+  url: https://conda.anaconda.org/conda-forge/win-64/khronos-opencl-icd-loader-2024.05.08-hc70643c_0.conda
+  sha256: 701357f02926bef5cb6d060a5471d50dc6528500fd045805ea785398fbb6d6d2
+  md5: 22b22ac3be757e10705caa3b5f321e0d
   depends:
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
@@ -244,31 +229,31 @@ packages:
   license: Apache-2.0
   license_family: APACHE
   purls: []
-  size: 86227
-  timestamp: 1717164911259
+  size: 87736
+  timestamp: 1727732609299
 - kind: conda
   name: libabseil
-  version: '20240116.2'
+  version: '20240722.0'
   build: cxx17_he0c23c2_1
   build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libabseil-20240116.2-cxx17_he0c23c2_1.conda
-  sha256: aafa7993698420ef786c145f660e6822139c02cf9230fbad43efff6d4828defc
-  md5: 19725e54b7f996e0a5748ec5e9e37ae9
+  url: https://conda.anaconda.org/conda-forge/win-64/libabseil-20240722.0-cxx17_he0c23c2_1.conda
+  sha256: 52ff148dee1871ef1d5c298bae20309707e866b44714a0a333a5ed2cf9a38832
+  md5: 3f59a73b07a05530b252ecb07dd882b9
   depends:
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
   - vc14_runtime >=14.29.30139
   constrains:
-  - libabseil-static =20240116.2=cxx17*
-  - abseil-cpp =20240116.2
+  - libabseil-static =20240722.0=cxx17*
+  - abseil-cpp =20240722.0
   arch: x86_64
   platform: win
   license: Apache-2.0
   license_family: Apache
   purls: []
-  size: 1802886
-  timestamp: 1720857653184
+  size: 1777570
+  timestamp: 1727296115119
 - kind: conda
   name: libblas
   version: 3.9.0
@@ -420,11 +405,12 @@ packages:
 - kind: conda
   name: libopenvino
   version: 2024.4.0
-  build: hfe1841e_0
+  build: hfe1841e_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-2024.4.0-hfe1841e_0.conda
-  sha256: d6f86e5cb683875345126c56fc10094b068d25e6a4683bd5c53197077ab8788d
-  md5: f327f614867c0c82fdfdb87cb7378851
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-2024.4.0-hfe1841e_1.conda
+  sha256: 9849d119e37f6c424ab04a8692d7cd37524d82eba8a0a2920a074bf3dbc1b44b
+  md5: 8112a7a31fa5fa7adcd9f213db4545c2
   depends:
   - pugixml >=1.14,<1.15.0a0
   - tbb >=2021.13.0
@@ -434,18 +420,19 @@ packages:
   arch: x86_64
   platform: win
   purls: []
-  size: 3325317
-  timestamp: 1726770673671
+  size: 3323185
+  timestamp: 1727742797259
 - kind: conda
   name: libopenvino-auto-batch-plugin
   version: 2024.4.0
-  build: h04f32e0_0
+  build: h04f32e0_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-auto-batch-plugin-2024.4.0-h04f32e0_0.conda
-  sha256: c906ccd4e2252a37bebb582f55145bad9df47ee57f0072e5c87c8e5a7ff6d4f9
-  md5: 098f793dccea9938831881569020b4ae
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-auto-batch-plugin-2024.4.0-h04f32e0_1.conda
+  sha256: 78cb1c9dcab0a925a422a5a38d7a3e2127c91189b554eba5552d96db77e2d558
+  md5: 8bcf361232b712f26183ec1344b4b1c2
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
+  - libopenvino 2024.4.0 hfe1841e_1
   - tbb >=2021.13.0
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
@@ -453,18 +440,19 @@ packages:
   arch: x86_64
   platform: win
   purls: []
-  size: 98783
-  timestamp: 1726770718364
+  size: 99710
+  timestamp: 1727742845056
 - kind: conda
   name: libopenvino-auto-plugin
   version: 2024.4.0
-  build: h04f32e0_0
+  build: h04f32e0_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-auto-plugin-2024.4.0-h04f32e0_0.conda
-  sha256: f39c6f4b7878b1795d8a5c51c16db709e8da291c93384e823e0d3512bdc29a16
-  md5: c77da7c381d40f0fcf86d5cd335dfc72
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-auto-plugin-2024.4.0-h04f32e0_1.conda
+  sha256: d874d48f60257e53b58d403a338159be0faaffac93f7d39e97c111c711554deb
+  md5: 9caed540cf3f82423b36fdd49ade48ea
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
+  - libopenvino 2024.4.0 hfe1841e_1
   - tbb >=2021.13.0
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
@@ -472,45 +460,47 @@ packages:
   arch: x86_64
   platform: win
   purls: []
-  size: 193037
-  timestamp: 1726770755770
+  size: 194349
+  timestamp: 1727742884368
 - kind: conda
   name: libopenvino-dev
   version: 2024.4.0
-  build: h04f32e0_0
+  build: h04f32e0_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-dev-2024.4.0-h04f32e0_0.conda
-  sha256: 7e8964c8b1e8a9469f72f00b18414b73e9673c9ef33527c6d9673ee3faef20a3
-  md5: ce2d21dbc7a31db35c9a36e2bd190768
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-dev-2024.4.0-h04f32e0_1.conda
+  sha256: a2ec03f2aae345d66f366d35dfcc5371dc52b9345a84c8b19f4764341beabcbe
+  md5: ad7ee21b654d99297e8ce3915ed1b190
   depends:
-  - libopenvino-auto-batch-plugin 2024.4.0 h04f32e0_0
-  - libopenvino-auto-plugin 2024.4.0 h04f32e0_0
-  - libopenvino-hetero-plugin 2024.4.0 h372dad0_0
-  - libopenvino-intel-cpu-plugin 2024.4.0 hfe1841e_0
-  - libopenvino-intel-gpu-plugin 2024.4.0 hfe1841e_0
-  - libopenvino-ir-frontend 2024.4.0 h372dad0_0
-  - libopenvino-onnx-frontend 2024.4.0 hdeef14f_0
-  - libopenvino-paddle-frontend 2024.4.0 hdeef14f_0
-  - libopenvino-pytorch-frontend 2024.4.0 he0c23c2_0
-  - libopenvino-tensorflow-frontend 2024.4.0 h7c40eac_0
-  - libopenvino-tensorflow-lite-frontend 2024.4.0 he0c23c2_0
+  - libopenvino-auto-batch-plugin 2024.4.0 h04f32e0_1
+  - libopenvino-auto-plugin 2024.4.0 h04f32e0_1
+  - libopenvino-hetero-plugin 2024.4.0 h372dad0_1
+  - libopenvino-intel-cpu-plugin 2024.4.0 hfe1841e_1
+  - libopenvino-intel-gpu-plugin 2024.4.0 hfe1841e_1
+  - libopenvino-ir-frontend 2024.4.0 h372dad0_1
+  - libopenvino-onnx-frontend 2024.4.0 h5707d70_1
+  - libopenvino-paddle-frontend 2024.4.0 h5707d70_1
+  - libopenvino-pytorch-frontend 2024.4.0 he0c23c2_1
+  - libopenvino-tensorflow-frontend 2024.4.0 hf4e5e90_1
+  - libopenvino-tensorflow-lite-frontend 2024.4.0 he0c23c2_1
   - tbb >=2021.13.0
   - tbb-devel >=2021.13.0,<2022.0a0
   arch: x86_64
   platform: win
   purls: []
-  size: 799568
-  timestamp: 1726771193121
+  size: 807550
+  timestamp: 1727743348703
 - kind: conda
   name: libopenvino-hetero-plugin
   version: 2024.4.0
-  build: h372dad0_0
+  build: h372dad0_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-hetero-plugin-2024.4.0-h372dad0_0.conda
-  sha256: 2c4a11f06dfca1a34e154acd16eb90827beb289cf3a7a644855c871ea05da8d0
-  md5: 8c8aadfadfced023770dd1772bf491a0
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-hetero-plugin-2024.4.0-h372dad0_1.conda
+  sha256: 4255d0ae5ee122a47e0a77418f951d57f35c6b363a173c4583c907637ac9699e
+  md5: 3dc40fff10eab0d7a8f719756a7e30f7
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
+  - libopenvino 2024.4.0 hfe1841e_1
   - pugixml >=1.14,<1.15.0a0
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
@@ -518,18 +508,19 @@ packages:
   arch: x86_64
   platform: win
   purls: []
-  size: 158787
-  timestamp: 1726770792668
+  size: 159985
+  timestamp: 1727742935549
 - kind: conda
   name: libopenvino-intel-cpu-plugin
   version: 2024.4.0
-  build: hfe1841e_0
+  build: hfe1841e_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-intel-cpu-plugin-2024.4.0-hfe1841e_0.conda
-  sha256: 1fbf44a8e89ca02a551fa540b33683c2d6bfacd3aa8b1e038944779a0db80a9e
-  md5: 4cb36b349840be5ea48ea06c43116a25
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-intel-cpu-plugin-2024.4.0-hfe1841e_1.conda
+  sha256: 0e25e7c5fc374c49b795ce4546e49a6b181b36029a2fbfa43ea289e268022685
+  md5: fb644753d714acace1f62f180252aaf2
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
+  - libopenvino 2024.4.0 hfe1841e_1
   - pugixml >=1.14,<1.15.0a0
   - tbb >=2021.13.0
   - ucrt >=10.0.20348.0
@@ -538,19 +529,20 @@ packages:
   arch: x86_64
   platform: win
   purls: []
-  size: 8030075
-  timestamp: 1726770845742
+  size: 8038586
+  timestamp: 1727742976578
 - kind: conda
   name: libopenvino-intel-gpu-plugin
   version: 2024.4.0
-  build: hfe1841e_0
+  build: hfe1841e_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-intel-gpu-plugin-2024.4.0-hfe1841e_0.conda
-  sha256: df442616021b78dbc9bfa73e9d0d61aa24f147b188f7824b5de5c647d49fbb78
-  md5: 8bc9005dabb8627f458042b56349000c
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-intel-gpu-plugin-2024.4.0-hfe1841e_1.conda
+  sha256: 807d69917f8924519423e3f6b64f32345551c5f1a08c0dead4ddcf71bdbd1b36
+  md5: 3425d54332ca5792678c189e7eb2cc4a
   depends:
   - khronos-opencl-icd-loader >=2023.4.17
-  - libopenvino 2024.4.0 hfe1841e_0
+  - libopenvino 2024.4.0 hfe1841e_1
   - pugixml >=1.14,<1.15.0a0
   - tbb >=2021.13.0
   - ucrt >=10.0.20348.0
@@ -559,18 +551,19 @@ packages:
   arch: x86_64
   platform: win
   purls: []
-  size: 7190191
-  timestamp: 1726770905271
+  size: 7182614
+  timestamp: 1727743041822
 - kind: conda
   name: libopenvino-ir-frontend
   version: 2024.4.0
-  build: h372dad0_0
+  build: h372dad0_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-ir-frontend-2024.4.0-h372dad0_0.conda
-  sha256: 4289fef59ebdf4cb995c7123d3d573f391f04d89b29fcb939c34f8ddc7d8ce80
-  md5: 07e40dcda6fe39ba53bd87a847de20e4
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-ir-frontend-2024.4.0-h372dad0_1.conda
+  sha256: dd777e23535b70e4071baa44258648c95baf6d79f43e9bc8cd27faa810df0f68
+  md5: a597057c32cd79d96403bd4a5ac6d38c
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
+  - libopenvino 2024.4.0 hfe1841e_1
   - pugixml >=1.14,<1.15.0a0
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
@@ -578,60 +571,67 @@ packages:
   arch: x86_64
   platform: win
   purls: []
-  size: 156863
-  timestamp: 1726770957420
+  size: 158232
+  timestamp: 1727743098747
 - kind: conda
   name: libopenvino-onnx-frontend
   version: 2024.4.0
-  build: hdeef14f_0
+  build: h5707d70_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-onnx-frontend-2024.4.0-hdeef14f_0.conda
-  sha256: 9d43eec2533f2c80bd91e34037f286ad2f4bb982fed6ed66047cbfdc205387e9
-  md5: 4eaaf850d5032c9493042efd7075b397
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-onnx-frontend-2024.4.0-h5707d70_1.conda
+  sha256: 39b66fbf88884fe093a2b1c87b432851afbf15e57ef9b18800634619aceb559b
+  md5: 52d26dbc42460ba541e234626fea1011
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
-  - libprotobuf >=4.25.3,<4.25.4.0a0
+  - libabseil * cxx17*
+  - libabseil >=20240722.0,<20240723.0a0
+  - libopenvino 2024.4.0 hfe1841e_1
+  - libprotobuf >=5.27.5,<5.27.6.0a0
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
   - vc14_runtime >=14.29.30139
   arch: x86_64
   platform: win
   purls: []
-  size: 997025
-  timestamp: 1726771001572
+  size: 991756
+  timestamp: 1727743145820
 - kind: conda
   name: libopenvino-paddle-frontend
   version: 2024.4.0
-  build: hdeef14f_0
+  build: h5707d70_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-paddle-frontend-2024.4.0-hdeef14f_0.conda
-  sha256: f1e30f8c5fff6ddc883ef4fbcf7b9881440038c7f79200fd84dbd902c3798a12
-  md5: 3c3cb5370aec9d031c83c02d2b404c36
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-paddle-frontend-2024.4.0-h5707d70_1.conda
+  sha256: 3bfdfaca70c91af517fe7ee5897164611676e91d68b639717b7da3b6db037b85
+  md5: 27b80a14e7f69e8facc6d021692b9543
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
-  - libprotobuf >=4.25.3,<4.25.4.0a0
+  - libabseil * cxx17*
+  - libabseil >=20240722.0,<20240723.0a0
+  - libopenvino 2024.4.0 hfe1841e_1
+  - libprotobuf >=5.27.5,<5.27.6.0a0
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
   - vc14_runtime >=14.29.30139
   arch: x86_64
   platform: win
   purls: []
-  size: 423145
-  timestamp: 1726771043719
+  size: 419305
+  timestamp: 1727743190562
 - kind: conda
   name: libopenvino-python
   version: 2024.4.0
-  build: py312hddbe33a_0
+  build: py312hddbe33a_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-python-2024.4.0-py312hddbe33a_0.conda
-  sha256: b36b6660e27e80e90ed097f26ce496b654198675f564bdf7cb56770bb215061d
-  md5: fda8725308335b5107e3be45b9e9af5d
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-python-2024.4.0-py312hddbe33a_1.conda
+  sha256: 8f4f78ef2f7ab0b1c3baa3c004004f4f77bcb62d2982509716eca8d226f17dff
+  md5: ed619898d57330629320bd7e46e65e8f
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
-  - libopenvino-onnx-frontend 2024.4.0 hdeef14f_0
-  - libopenvino-paddle-frontend 2024.4.0 hdeef14f_0
-  - libopenvino-pytorch-frontend 2024.4.0 he0c23c2_0
-  - libopenvino-tensorflow-frontend 2024.4.0 h7c40eac_0
+  - libopenvino 2024.4.0 hfe1841e_1
+  - libopenvino-onnx-frontend 2024.4.0 h5707d70_1
+  - libopenvino-paddle-frontend 2024.4.0 h5707d70_1
+  - libopenvino-pytorch-frontend 2024.4.0 he0c23c2_1
+  - libopenvino-tensorflow-frontend 2024.4.0 hf4e5e90_1
   - numpy <2.0.0
   - openvino-telemetry >=2023.1.1
   - packaging
@@ -644,39 +644,41 @@ packages:
   platform: win
   purls:
   - pkg:pypi/openvino?source=hash-mapping
-  size: 1542525
-  timestamp: 1726771947600
+  size: 1544108
+  timestamp: 1727749168180
 - kind: conda
   name: libopenvino-pytorch-frontend
   version: 2024.4.0
-  build: he0c23c2_0
+  build: he0c23c2_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-pytorch-frontend-2024.4.0-he0c23c2_0.conda
-  sha256: 945538dbbd895949da628b51e5ed72c162ff12ff3b7b6e738b844669d91f7bb0
-  md5: 7734afa1bb07fcd13db339c08855fc65
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-pytorch-frontend-2024.4.0-he0c23c2_1.conda
+  sha256: 38e25f599eb022e3c655541ecd33547f7111058b520373a785fd16463caeabd9
+  md5: 1607477ea0676f98505df042a9ec6672
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
+  - libopenvino 2024.4.0 hfe1841e_1
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
   - vc14_runtime >=14.29.30139
   arch: x86_64
   platform: win
   purls: []
-  size: 676134
-  timestamp: 1726771081225
+  size: 677864
+  timestamp: 1727743230045
 - kind: conda
   name: libopenvino-tensorflow-frontend
   version: 2024.4.0
-  build: h7c40eac_0
+  build: hf4e5e90_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-tensorflow-frontend-2024.4.0-h7c40eac_0.conda
-  sha256: 9d2a3097606fde61f44f245aaef80391258bc8e80233e524ac006bbcbf20eeb9
-  md5: 0c15de0c974cb14a5780d49c21719872
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-tensorflow-frontend-2024.4.0-hf4e5e90_1.conda
+  sha256: 0dc25c998ce231e6bc33183e6013e96db013ca07fffb45ad140c3ad59c60b86e
+  md5: a82ca6e666d027e8fd369a14a51c97fc
   depends:
   - libabseil * cxx17*
-  - libabseil >=20240116.2,<20240117.0a0
-  - libopenvino 2024.4.0 hfe1841e_0
-  - libprotobuf >=4.25.3,<4.25.4.0a0
+  - libabseil >=20240722.0,<20240723.0a0
+  - libopenvino 2024.4.0 hfe1841e_1
+  - libprotobuf >=5.27.5,<5.27.6.0a0
   - snappy >=1.2.1,<1.3.0a0
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
@@ -684,38 +686,39 @@ packages:
   arch: x86_64
   platform: win
   purls: []
-  size: 880904
-  timestamp: 1726771125554
+  size: 880412
+  timestamp: 1727743277470
 - kind: conda
   name: libopenvino-tensorflow-lite-frontend
   version: 2024.4.0
-  build: he0c23c2_0
+  build: he0c23c2_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-tensorflow-lite-frontend-2024.4.0-he0c23c2_0.conda
-  sha256: db07062ebc0e20891e027d9535a47c32649eb43ed4a6de428b1465f51453e0d0
-  md5: 6b29da2ebc96410a0add0852f8a80624
+  url: https://conda.anaconda.org/conda-forge/win-64/libopenvino-tensorflow-lite-frontend-2024.4.0-he0c23c2_1.conda
+  sha256: 4d06a6d430f2c58793dd2c8ccd45641c57a7b1fbe130540ce9ed83f4e6809241
+  md5: a7e771ba26beb25c785a6d34f8b54aed
   depends:
-  - libopenvino 2024.4.0 hfe1841e_0
+  - libopenvino 2024.4.0 hfe1841e_1
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
   - vc14_runtime >=14.29.30139
   arch: x86_64
   platform: win
   purls: []
-  size: 323153
-  timestamp: 1726771163540
+  size: 324141
+  timestamp: 1727743317824
 - kind: conda
   name: libprotobuf
-  version: 4.25.3
-  build: h47a098d_1
-  build_number: 1
+  version: 5.27.5
+  build: hcaed137_2
+  build_number: 2
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libprotobuf-4.25.3-h47a098d_1.conda
-  sha256: 6412e1b25d14187a4a9ccd62c27fb163621aa4c4dd5f8e97e2aaabed5e61598e
-  md5: 2ab67bf04b060ed5af5bc6999f1d6b31
+  url: https://conda.anaconda.org/conda-forge/win-64/libprotobuf-5.27.5-hcaed137_2.conda
+  sha256: f039a07e6a52542e298ad0cf39d95d261f02c62256c82a60e246f291b2535e1b
+  md5: 0155746155856bc39091b5242c9b52d7
   depends:
   - libabseil * cxx17*
-  - libabseil >=20240116.2,<20240117.0a0
+  - libabseil >=20240722.0,<20240723.0a0
   - libzlib >=1.3.1,<2.0a0
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
@@ -725,8 +728,8 @@ packages:
   license: BSD-3-Clause
   license_family: BSD
   purls: []
-  size: 5487058
-  timestamp: 1727162016965
+  size: 6090012
+  timestamp: 1727424307861
 - kind: conda
   name: libsqlite
   version: 3.46.1
@@ -745,28 +748,6 @@ packages:
   purls: []
   size: 876666
   timestamp: 1725354171439
-- kind: conda
-  name: libxcb
-  version: '1.16'
-  build: h013a479_1
-  build_number: 1
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libxcb-1.16-h013a479_1.conda
-  sha256: abae56e12a4c62730b899fdfb82628a9ac171c4ce144fc9f34ae024957a82a0e
-  md5: f0b599acdc82d5bc7e3b105833e7c5c8
-  depends:
-  - m2w64-gcc-libs
-  - m2w64-gcc-libs-core
-  - pthread-stubs
-  - xorg-libxau >=1.0.11,<2.0a0
-  - xorg-libxdmcp
-  arch: x86_64
-  platform: win
-  license: MIT
-  license_family: MIT
-  purls: []
-  size: 989459
-  timestamp: 1724419883091
 - kind: conda
   name: libxml2
   version: 2.12.7
@@ -792,117 +773,25 @@ packages:
 - kind: conda
   name: libzlib
   version: 1.3.1
-  build: h2466b09_1
-  build_number: 1
+  build: h2466b09_2
+  build_number: 2
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libzlib-1.3.1-h2466b09_1.conda
-  sha256: b13846a54a15243e15f96fec06b526d8155adc6a1ac2b6ed47a88f6a71a94b68
-  md5: d4483ca8afc57ddf1f6dded53b36c17f
+  url: https://conda.anaconda.org/conda-forge/win-64/libzlib-1.3.1-h2466b09_2.conda
+  sha256: ba945c6493449bed0e6e29883c4943817f7c79cbff52b83360f7b341277c6402
+  md5: 41fbfac52c601159df6c01f875de31b9
   depends:
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
   - vc14_runtime >=14.29.30139
   constrains:
-  - zlib 1.3.1 *_1
+  - zlib 1.3.1 *_2
   arch: x86_64
   platform: win
   license: Zlib
   license_family: Other
   purls: []
-  size: 56186
-  timestamp: 1716874730539
-- kind: conda
-  name: m2w64-gcc-libgfortran
-  version: 5.3.0
-  build: '6'
-  build_number: 6
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/m2w64-gcc-libgfortran-5.3.0-6.tar.bz2
-  sha256: 9de95a7996d5366ae0808eef2acbc63f9b11b874aa42375f55379e6715845dc6
-  md5: 066552ac6b907ec6d72c0ddab29050dc
-  depends:
-  - m2w64-gcc-libs-core
-  - msys2-conda-epoch ==20160418
-  arch: x86_64
-  platform: win
-  license: GPL, LGPL, FDL, custom
-  purls: []
-  size: 350687
-  timestamp: 1608163451316
-- kind: conda
-  name: m2w64-gcc-libs
-  version: 5.3.0
-  build: '7'
-  build_number: 7
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/m2w64-gcc-libs-5.3.0-7.tar.bz2
-  sha256: 3bd1ab02b7c89a5b153a17be03b36d833f1517ff2a6a77ead7c4a808b88196aa
-  md5: fe759119b8b3bfa720b8762c6fdc35de
-  depends:
-  - m2w64-gcc-libgfortran
-  - m2w64-gcc-libs-core
-  - m2w64-gmp
-  - m2w64-libwinpthread-git
-  - msys2-conda-epoch ==20160418
-  arch: x86_64
-  platform: win
-  license: GPL3+, partial:GCCRLE, partial:LGPL2+
-  purls: []
-  size: 532390
-  timestamp: 1608163512830
-- kind: conda
-  name: m2w64-gcc-libs-core
-  version: 5.3.0
-  build: '7'
-  build_number: 7
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/m2w64-gcc-libs-core-5.3.0-7.tar.bz2
-  sha256: 58afdfe859ed2e9a9b1cc06bc408720cb2c3a6a132e59d4805b090d7574f4ee0
-  md5: 4289d80fb4d272f1f3b56cfe87ac90bd
-  depends:
-  - m2w64-gmp
-  - m2w64-libwinpthread-git
-  - msys2-conda-epoch ==20160418
-  arch: x86_64
-  platform: win
-  license: GPL3+, partial:GCCRLE, partial:LGPL2+
-  purls: []
-  size: 219240
-  timestamp: 1608163481341
-- kind: conda
-  name: m2w64-gmp
-  version: 6.1.0
-  build: '2'
-  build_number: 2
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/m2w64-gmp-6.1.0-2.tar.bz2
-  sha256: 7e3cd95f554660de45f8323fca359e904e8d203efaf07a4d311e46d611481ed1
-  md5: 53a1c73e1e3d185516d7e3af177596d9
-  depends:
-  - msys2-conda-epoch ==20160418
-  arch: x86_64
-  platform: win
-  license: LGPL3
-  purls: []
-  size: 743501
-  timestamp: 1608163782057
-- kind: conda
-  name: m2w64-libwinpthread-git
-  version: 5.0.0.4634.697f757
-  build: '2'
-  build_number: 2
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/m2w64-libwinpthread-git-5.0.0.4634.697f757-2.tar.bz2
-  sha256: f63a09b2cae7defae0480f1740015d6235f1861afa6fe2e2d3e10bd0d1314ee0
-  md5: 774130a326dee16f1ceb05cc687ee4f0
-  depends:
-  - msys2-conda-epoch ==20160418
-  arch: x86_64
-  platform: win
-  license: MIT, BSD
-  purls: []
-  size: 31928
-  timestamp: 1608166099896
+  size: 55476
+  timestamp: 1727963768015
 - kind: conda
   name: mkl
   version: 2024.1.0
@@ -922,20 +811,6 @@ packages:
   purls: []
   size: 109381621
   timestamp: 1716561374449
-- kind: conda
-  name: msys2-conda-epoch
-  version: '20160418'
-  build: '1'
-  build_number: 1
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/msys2-conda-epoch-20160418-1.tar.bz2
-  sha256: 99358d58d778abee4dca82ad29fb58058571f19b0f86138363c260049d4ac7f1
-  md5: b0309b72560df66f71a9d5e34a5efdfa
-  arch: x86_64
-  platform: win
-  purls: []
-  size: 3227
-  timestamp: 1608166968312
 - kind: conda
   name: numpy
   version: 1.26.4
@@ -965,9 +840,9 @@ packages:
   timestamp: 1707226412944
 - kind: pypi
   name: ok-script
-  version: 0.0.275
-  url: https://files.pythonhosted.org/packages/03/ea/b9acdb44adc395098fb18701388c2edf5bb4205a31be885cd411595c2c15/ok_script-0.0.275-py3-none-any.whl
-  sha256: dab972ccedd35b9fd12dbd8d7ad6e3bc7945cd4dd23ce6b21998ddfc9e01209a
+  version: 0.0.286
+  url: https://files.pythonhosted.org/packages/31/16/02999abff0c5b9c28b0494251950f770435de2fd48fcac5d4eebbe4d09c1/ok_script-0.0.286-py3-none-any.whl
+  sha256: d2184d1f815a11a86eea556a7db6bbd868009508bcb65470345108015981ef87
   requires_dist:
   - pywin32>=306
   - darkdetect>=0.8.0
@@ -1035,19 +910,20 @@ packages:
 - kind: conda
   name: openvino
   version: 2024.4.0
-  build: he0c23c2_0
+  build: he0c23c2_1
+  build_number: 1
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/openvino-2024.4.0-he0c23c2_0.conda
-  sha256: 79c26f7fa2d933147e5687040890d8994bd368e5fca076c8aac5b894bc1f2a9f
-  md5: 1252539cee528c47099ea59802748606
+  url: https://conda.anaconda.org/conda-forge/win-64/openvino-2024.4.0-he0c23c2_1.conda
+  sha256: eddb03f837a0436711fdedecdeaaaad6f80da3e27e16b8f9414e2ac1ebf17aca
+  md5: 1425e43cff1d2afce7af0d6840b4bfba
   depends:
-  - libopenvino-dev 2024.4.0 h04f32e0_0
+  - libopenvino-dev 2024.4.0 h04f32e0_1
   - libopenvino-python >=2024.4.0,<2024.4.1.0a0
   arch: x86_64
   platform: win
   purls: []
-  size: 29793
-  timestamp: 1726771954202
+  size: 31053
+  timestamp: 1727744130345
 - kind: conda
   name: openvino-telemetry
   version: 2024.1.0
@@ -1133,24 +1009,6 @@ packages:
   size: 506867
   timestamp: 1725738313194
 - kind: conda
-  name: pthread-stubs
-  version: '0.4'
-  build: hcd874cb_1001
-  build_number: 1001
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/pthread-stubs-0.4-hcd874cb_1001.tar.bz2
-  sha256: bb5a6ddf1a609a63addd6d7b488b0f58d05092ea84e9203283409bff539e202a
-  md5: a1f820480193ea83582b13249a7e7bd9
-  depends:
-  - m2w64-gcc-libs
-  arch: x86_64
-  platform: win
-  license: MIT
-  license_family: MIT
-  purls: []
-  size: 6417
-  timestamp: 1606147814351
-- kind: conda
   name: pthreads-win32
   version: 2.9.1
   build: hfa6e2cd_3
@@ -1228,9 +1086,9 @@ packages:
   requires_python: <3.13,>=3.9
 - kind: pypi
   name: pyside6-fluent-widgets
-  version: 1.6.5
-  url: https://files.pythonhosted.org/packages/e5/3b/0720f4768b9de1689ae16e56d909e877955ba1447525447cb955299bf51b/PySide6_Fluent_Widgets-1.6.5-py3-none-any.whl
-  sha256: 19e443bf82b5892261cb3772b5e4d784d199a141efda1ec6a73001c70538fda5
+  version: 1.6.6
+  url: https://files.pythonhosted.org/packages/20/2c/13ae061348e28e7f261302e34a56e09dbf101f955e8d9d47c0282e80c43a/PySide6_Fluent_Widgets-1.6.6-py3-none-any.whl
+  sha256: e57b6adef4ff33b0db8bdbddb594dd55eda4a928d7d547879f7d0baf73d556c4
   requires_dist:
   - pyside6>=6.4.2
   - pysidesix-frameless-window>=0.4.0
@@ -1249,13 +1107,12 @@ packages:
   - pywin32 ; platform_system == 'Windows'
 - kind: conda
   name: python
-  version: 3.12.6
-  build: hce54a09_1_cpython
-  build_number: 1
+  version: 3.12.7
+  build: hce54a09_0_cpython
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/python-3.12.6-hce54a09_1_cpython.conda
-  sha256: 67229f7478e6236dcb8a2f5ea2381b865f98728c78fd3b7df2e5288af06d095e
-  md5: e4b36ee40840b50ef52c5071a3586812
+  url: https://conda.anaconda.org/conda-forge/win-64/python-3.12.7-hce54a09_0_cpython.conda
+  sha256: 2308cfa9ec563360d29ced7fd13a6b60b9a7b3cf8961a95c78c69f486211d018
+  md5: 21f1f7c6ccf6b747c5086d2422c230e1
   depends:
   - bzip2 >=1.0.8,<2.0a0
   - libexpat >=2.6.3,<3.0a0
@@ -1268,7 +1125,6 @@ packages:
   - ucrt >=10.0.20348.0
   - vc >=14.2,<15
   - vc14_runtime >=14.29.30139
-  - xorg-libx11 >=1.8.9,<2.0a0
   - xz >=5.2.6,<6.0a0
   constrains:
   - python_abi 3.12.* *_cp312
@@ -1276,8 +1132,8 @@ packages:
   platform: win
   license: Python-2.0
   purls: []
-  size: 15862400
-  timestamp: 1727014062724
+  size: 15987537
+  timestamp: 1728057382072
 - kind: conda
   name: python_abi
   version: '3.12'
@@ -1298,9 +1154,9 @@ packages:
   timestamp: 1723823139725
 - kind: pypi
   name: pywin32
-  version: '306'
-  url: https://files.pythonhosted.org/packages/83/1c/25b79fc3ec99b19b0a0730cc47356f7e2959863bf9f3cd314332bddb4f68/pywin32-306-cp312-cp312-win_amd64.whl
-  sha256: 37257794c1ad39ee9be652da0462dc2e394c8159dfd913a8a4e8eb6fd346da0e
+  version: '307'
+  url: https://files.pythonhosted.org/packages/9c/11/c56e771d2cdbd2dac8e656edb2c814e4b2239da2c9028aa7265cdfff8aed/pywin32-307-cp312-cp312-win_amd64.whl
+  sha256: 00d047992bb5dcf79f8b9b7c81f72e0130f9fe4b22df613f755ab1cc021d8347
 - kind: pypi
   name: pyyaml
   version: 6.0.2
@@ -1480,18 +1336,17 @@ packages:
   timestamp: 1717802653893
 - kind: conda
   name: tzdata
-  version: 2024a
-  build: h8827d51_1
-  build_number: 1
+  version: 2024b
+  build: hc8b5060_0
   subdir: noarch
   noarch: generic
-  url: https://conda.anaconda.org/conda-forge/noarch/tzdata-2024a-h8827d51_1.conda
-  sha256: 7d21c95f61319dba9209ca17d1935e6128af4235a67ee4e57a00908a1450081e
-  md5: 8bfdead4e0fff0383ae4c9c50d0531bd
+  url: https://conda.anaconda.org/conda-forge/noarch/tzdata-2024b-hc8b5060_0.conda
+  sha256: 4fde5c3008bf5d2db82f2b50204464314cc3c91c1d953652f7bd01d9e52aefdf
+  md5: 8ac3367aafb1cc0a068483c580af8015
   license: LicenseRef-Public-Domain
   purls: []
-  size: 124164
-  timestamp: 1724736371498
+  size: 122354
+  timestamp: 1728047496079
 - kind: conda
   name: ucrt
   version: 10.0.22621.0
@@ -1598,118 +1453,6 @@ packages:
   - wheel ; extra == 'package'
   - twine ; extra == 'package'
   - pytest ; extra == 'tests'
-- kind: conda
-  name: xorg-kbproto
-  version: 1.0.7
-  build: hcd874cb_1002
-  build_number: 1002
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/xorg-kbproto-1.0.7-hcd874cb_1002.tar.bz2
-  sha256: 5b16e1ca1ecc0d2907f236bc4d8e6ecfd8417db013c862a01afb7f9d78e48c09
-  md5: 8d11c1dac4756ca57e78c1bfe173bba4
-  depends:
-  - m2w64-gcc-libs
-  arch: x86_64
-  platform: win
-  license: MIT
-  license_family: MIT
-  purls: []
-  size: 28166
-  timestamp: 1610028297505
-- kind: conda
-  name: xorg-libx11
-  version: 1.8.9
-  build: h0076a8d_1
-  build_number: 1
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/xorg-libx11-1.8.9-h0076a8d_1.conda
-  sha256: c378304044321e74c6acd483674f404864a229ab2a8841bf9515bc1a30783e99
-  md5: 0296a4de2235cad9ad3112134f8e4519
-  depends:
-  - libxcb >=1.16,<2.0.0a0
-  - m2w64-gcc-libs
-  - m2w64-gcc-libs-core
-  - xorg-kbproto
-  - xorg-xextproto >=7.3.0,<8.0a0
-  - xorg-xproto
-  arch: x86_64
-  platform: win
-  license: MIT
-  license_family: MIT
-  purls: []
-  size: 814589
-  timestamp: 1718847832308
-- kind: conda
-  name: xorg-libxau
-  version: 1.0.11
-  build: hcd874cb_0
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/xorg-libxau-1.0.11-hcd874cb_0.conda
-  sha256: 8c5b976e3b36001bdefdb41fb70415f9c07eff631f1f0155f3225a7649320e77
-  md5: c46ba8712093cb0114404ae8a7582e1a
-  depends:
-  - m2w64-gcc-libs
-  - m2w64-gcc-libs-core
-  arch: x86_64
-  platform: win
-  license: MIT
-  license_family: MIT
-  purls: []
-  size: 51297
-  timestamp: 1684638355740
-- kind: conda
-  name: xorg-libxdmcp
-  version: 1.1.3
-  build: hcd874cb_0
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/xorg-libxdmcp-1.1.3-hcd874cb_0.tar.bz2
-  sha256: f51205d33c07d744ec177243e5d9b874002910c731954f2c8da82459be462b93
-  md5: 46878ebb6b9cbd8afcf8088d7ef00ece
-  depends:
-  - m2w64-gcc-libs
-  arch: x86_64
-  platform: win
-  license: MIT
-  license_family: MIT
-  purls: []
-  size: 67908
-  timestamp: 1610072296570
-- kind: conda
-  name: xorg-xextproto
-  version: 7.3.0
-  build: hcd874cb_1003
-  build_number: 1003
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/xorg-xextproto-7.3.0-hcd874cb_1003.conda
-  sha256: 04c0a08fd34fa33406c20f729e8f9cc40e8fd898072b952a5c14280fcf26f2e6
-  md5: 6e6c2639620e436bddb7c040cd4f3adb
-  depends:
-  - m2w64-gcc-libs
-  arch: x86_64
-  platform: win
-  license: MIT
-  license_family: MIT
-  purls: []
-  size: 31034
-  timestamp: 1677037259999
-- kind: conda
-  name: xorg-xproto
-  version: 7.0.31
-  build: hcd874cb_1007
-  build_number: 1007
-  subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/xorg-xproto-7.0.31-hcd874cb_1007.tar.bz2
-  sha256: b84cacba8479fa14199c9255fb62e005cacc619e90198c53b1653973709ec331
-  md5: 88f3c65d2ad13826a9e0b162063be023
-  depends:
-  - m2w64-gcc-libs
-  arch: x86_64
-  platform: win
-  license: MIT
-  license_family: MIT
-  purls: []
-  size: 75708
-  timestamp: 1607292254607
 - kind: conda
   name: xz
   version: 5.2.6
