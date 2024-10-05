@@ -1,8 +1,5 @@
-import time
-
 from qfluentwidgets import FluentIcon
 
-from ok.feature.Feature import Feature
 from ok.logging.Logger import get_logger
 from src.task.BaseCombatTask import BaseCombatTask, CharDeadException
 
@@ -50,45 +47,10 @@ class FarmWorldBossTask(BaseCombatTask):
         self.icon = FluentIcon.GLOBE
 
     # not current in use because not stable, right now using one click to scroll down
-    def scroll_down_a_page(self):
-        source_box = self.box_of_screen(0.38, 0.80, 0.42, 0.83)
-        source_template = Feature(source_box.crop_frame(self.frame), source_box.x, source_box.y)
-        target_box = self.box_of_screen(0.38, 0.16, 0.42, 0.31)
-        start = time.time()
-
-        self.click_relative(0.5, 0.5)
-        self.sleep(0.1)
-        while True:
-            if time.time() - start > 20:
-                raise Exception("scroll to long")
-            self.scroll_relative(0.5, 0.5, -1)
-            self.sleep(0.1)
-            targets = self.find_feature('target_box', box=target_box, template=source_template)
-            if targets:
-                self.log_info(f'scroll to targets {targets} successfully')
-                break
-
-    def teleport_to_heal(self):
-        self.info['Death Count'] = self.info.get('Death Count', 0) + 1
-        self.send_key('esc')
-        self.sleep(1)
-        self.log_info('click m to open the map')
-        self.send_key('m')
-        self.sleep(2)
-        self.click_relative(0.58, 0.05)
-        self.log_info('click abyss')
-        self.sleep(1)
-        self.click_relative(0.37, 0.42)
-        travel = self.wait_feature('gray_teleport', raise_if_not_found=True, time_out=3)
-        self.click_box(travel, relative_x=1.5)
-        self.wait_in_team_and_world(time_out=20)
-        self.sleep(2)
 
     def run(self):
         self.set_check_monthly_card()
-        if not self.check_main():
-            self.log_error('must be in game world and in teams', notify=True)
-        self.handler.post(self.mouse_reset, 0.01)
+        self.check_main()
         count = 0
         while True:
             for i in range(1, 4):
