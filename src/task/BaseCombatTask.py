@@ -14,6 +14,7 @@ from src import text_white_color
 from src.char import BaseChar
 from src.char.BaseChar import Priority, dot_color
 from src.char.CharFactory import get_char_by_pos
+from src.char.Healer import Healer
 from src.combat.CombatCheck import CombatCheck
 from src.task.BaseWWTask import BaseWWTask
 
@@ -43,7 +44,7 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
         CombatCheck.__init__(self)
         self.chars = [None, None, None]
         self.char_texts = ['char_1_text', 'char_2_text', 'char_3_text']
-        self.key_config = self.get_config(key_config_option)
+        self.key_config = self.get_global_config(key_config_option)
 
         self.mouse_pos = None
         self.combat_start = 0
@@ -349,13 +350,19 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
                 self.chars = self.chars[:2]
             logger.info(f'team size changed to 2')
 
+        healer_count = 0
         for char in self.chars:
             if char is not None:
                 char.reset_state()
+                if isinstance(char, Healer):
+                    healer_count += 1
                 if char.index == current_index:
                     char.is_current_char = True
                 else:
                     char.is_current_char = False
+        if healer_count >= 2:
+            self.log_error(f"Can not auto combat because team can only have one healer at most", notify=True, tray=True)
+            self.pause()
         self.combat_start = time.time()
 
         self.log_info(f'load chars success {self.chars}')
