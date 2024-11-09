@@ -72,6 +72,7 @@ class CombatCheck:
         return time.time() - self._last_liberation < 0.15
 
     def check_count_down(self):
+        return False
         count_down_area = self.box_of_screen_scaled(3840, 2160, 1820, 266, 2100,
                                                     340, name="check_count_down", hcenter=True)
         count_down = self.calculate_color_percentage(text_white_color,
