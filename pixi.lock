@@ -67,7 +67,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/fd/5b/8f0c4a5bb9fd491c277c21eff7ccae71b47d43c4446c9d0c6cff2fe8c2c4/gitdb-4.0.11-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e9/bd/cc3a402a6439c15c3d4294333e13042b915bbeab54edc457c723931fed3f/GitPython-3.1.43-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/31/16/02999abff0c5b9c28b0494251950f770435de2fd48fcac5d4eebbe4d09c1/ok_script-0.0.286-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/05/91/6e349f70b9965f048386636805647ac887a1de8d70f0d336d65458a97da8/ok_script-0.0.290-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a7/9e/7110d2c5d543ab03b9581dbb1f8e2429863e44e0c9b4960b766f230c1279/opencv_contrib_python-4.10.0.84-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/6c/fab8113424af5049f85717e8e527ca3773299a3c6b02506e66436e19874f/opencv_python-4.10.0.84-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/74/0a/d4ce3c44bca8635bd29a2eab5aa181b654a734a29b263ca8efe013beea98/pillow-10.4.0-cp312-cp312-win_amd64.whl
@@ -840,9 +840,9 @@ packages:
   timestamp: 1707226412944
 - kind: pypi
   name: ok-script
-  version: 0.0.286
-  url: https://files.pythonhosted.org/packages/31/16/02999abff0c5b9c28b0494251950f770435de2fd48fcac5d4eebbe4d09c1/ok_script-0.0.286-py3-none-any.whl
-  sha256: d2184d1f815a11a86eea556a7db6bbd868009508bcb65470345108015981ef87
+  version: 0.0.290
+  url: https://files.pythonhosted.org/packages/05/91/6e349f70b9965f048386636805647ac887a1de8d70f0d336d65458a97da8/ok_script-0.0.290-py3-none-any.whl
+  sha256: 7f460464c438db61cfbe1738fa8553f4b37f4be6b66165395a66bea204eca975
   requires_dist:
   - pywin32>=306
   - darkdetect>=0.8.0
