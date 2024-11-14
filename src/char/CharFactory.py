@@ -1,4 +1,5 @@
 from src.char.Baizhi import Baizhi
+from src.char.Camellya import Camellya
 from src.char.Calcharo import Calcharo
 from src.char.Changli import Changli
 from src.char.CharSkillButton import is_float
@@ -60,6 +61,7 @@ def get_char_by_pos(task, box, index):
         Character('char_jiyan',         Jiyan, 16, WWRole.MainDps, WWRole.Healer,           False,UseLiberationState.Default,UseFullForteState.Default,     Echos.FEILIAN_BERINGAL),
         Character('char_zhezhi',        Zhezhi, 6, WWRole.SubDps, WWRole.MainDps,           True,UseLiberationState.Default,UseFullForteState.Default,      Echos.IMPERMANENCE_HERON),
         Character('char_xiangliyao',    Xiangliyao, 5, WWRole.MainDps, WWRole.Default,      False,UseLiberationState.Default,UseFullForteState.Default,     Echos.DEFAULT20),
+        Character('char_camellya',      Camellya, 4, WWRole.MainDps, WWRole.Default,        False,UseLiberationState.Default,UseFullForteState.Default,     Echos.DEFAULT20),
         #missing characters Aalto,Youhu,Lingyang, Spectro Rover
     ]
     highest_confidence = 0
