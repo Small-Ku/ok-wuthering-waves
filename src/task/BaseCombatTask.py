@@ -16,7 +16,6 @@ from src.char.BaseChar import Priority, dot_color
 from src.char.CharFactory import get_char_by_pos
 from src.char.Healer import Healer
 from src.combat.CombatCheck import CombatCheck
-from src.task.BaseWWTask import BaseWWTask
 
 logger = get_logger(__name__)
 
@@ -37,11 +36,10 @@ key_config_option = ConfigOption('Game Hotkey Config', {
 }, description='In Game Hotkey for Skills')
 
 
-class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
+class BaseCombatTask(CombatCheck, FindFeature, OCR):
 
     def __init__(self):
         super().__init__()
-        CombatCheck.__init__(self)
         self.chars = [None, None, None]
         self.char_texts = ['char_1_text', 'char_2_text', 'char_3_text']
         self.key_config = self.get_global_config(key_config_option)
@@ -51,22 +49,27 @@ class BaseCombatTask(BaseWWTask, FindFeature, OCR, CombatCheck):
 
         self.char_texts = ['char_1_text', 'char_2_text', 'char_3_text']
 
-    def send_key_and_wait_animation(self, key, check_function, total_wait=10, animation_wait=5):
+    def send_key_and_wait_animation(self, key, check_function, total_wait=7, enter_animation_wait=0.7):
         start = time.time()
         animation_start = 0
-        while time.time() - start < total_wait and (
-                animation_start == 0 or time.time() - animation_start < animation_wait):
+        while time.time() - start < total_wait:
             if check_function():
                 if animation_start > 0:
-                    self.in_liberation = False
+                    self._in_liberation = False
+                    logger.debug(f'animation ended')
                     return
                 else:
-                    self.send_key(key, interval=0.2)
+                    if time.time() - start > enter_animation_wait:
+                        logger.info(f'send_key_and_wait_animation failed to enter animation')
+                        return
+                    logger.debug(f'animation not started send key {key}')
+                    self.send_key(key, after_sleep=0.1)
             else:
                 if animation_start == 0:
                     animation_start = time.time()
-                self.in_liberation = True
-                self.next_frame()
+                    logger.debug(f'animation started: {animation_start}')
+                self._in_liberation = True
+            self.next_frame()
         logger.info(f'send_key_and_wait_animation timed out {key}')
 
     def teleport_to_heal(self):

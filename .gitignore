@@ -11,8 +11,6 @@ __pycache__/
 *$py.class
 configs/
 paddle_model/
-ok/
-ok
 md5.txt
 update.bat
 click_screenshots/
@@ -20,9 +18,11 @@ test_scripts/
 screenshots/
 thread_dumps.txt
 # C extensions
+ok
+ok/
 *.so
 *.bat
-
+**/__pycache__/
 # Distribution / packaging
 .Python
 test/

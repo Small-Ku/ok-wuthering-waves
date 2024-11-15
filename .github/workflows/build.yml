@@ -5,16 +5,24 @@ on:
     # Sequence of patterns matched against refs/tags
     tags:
       - 'v*'
+#    branches:
+#      - master
 
 jobs:
   build:
     name: Build exe with launcher
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
-        name: Checkout code
+      - name: Configure git
+        run: |
+          git config --global user.email "ok-oldking@users.noreply.github.com"
+          git config --global user.name "ok-oldking"
+
+      - name: Checkout source repository
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Important: fetch all history for all tags and branches
+          token: ${{ secrets.OK_GH }}
+          fetch-depth: 0
 
       - name: Get Changes between Tags
         id: changes
@@ -35,6 +43,29 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Copy ok-script lib
+        run: |
+          python -m ok.update.copy_ok_folder
+
+      - name: amend git to add ok-script
+        run: |
+          git add -f ok/
+          git commit --amend --no-edit
+          git tag -d ${{ steps.tagName.outputs.tag }}
+          git tag ${{ steps.tagName.outputs.tag }} -m "tag_${{ steps.tagName.outputs.tag }}"
+
+      - name: Push to GitHub update
+        run: |
+          git remote add ghupdate https://ok-oldking:${{ secrets.OK_GH }}@github.com/ok-oldking/ok-ww-update.git
+          git push ghupdate --force --tags HEAD:master 
+          git push ghupdate ${{ steps.tagName.outputs.tag }}
+
+      - name: Push to Coding.net
+        run: |
+          git remote add coding https://${{ secrets.CODING_USERNAME }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/g-frfh1513/ok-wuthering-waves/ok-wuthering-waves.git
+          git push coding --force --tags HEAD:master 
+          git push coding ${{ steps.tagName.outputs.tag }}
 
       - name: Build Executable
         run: |
