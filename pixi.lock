@@ -42,7 +42,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/openssl-3.4.0-h2466b09_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/openvino-2024.4.0-he0c23c2_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/openvino-telemetry-2024.1.0-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/packaging-24.2-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/packaging-24.2-pyhff2d567_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/psutil-6.1.0-py312h4389bb4_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/pthreads-win32-2.9.1-h2466b09_4.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/pugixml-1.14-h63175ca_0.conda
@@ -67,7 +67,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/fd/5b/8f0c4a5bb9fd491c277c21eff7ccae71b47d43c4446c9d0c6cff2fe8c2c4/gitdb-4.0.11-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e9/bd/cc3a402a6439c15c3d4294333e13042b915bbeab54edc457c723931fed3f/GitPython-3.1.43-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/af/0e/11f647d5a3b9ae72a4542b9ac896769cc0a5466c6ae2a3ecfb5e973b6cde/ok_script-0.0.309-cp312-cp312-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/59/b7/5330d4058febe8c0b5bb40fdacb31d987630f0a438d37b4760d05ec09f98/ok_script-0.0.326-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/a7/9e/7110d2c5d543ab03b9581dbb1f8e2429863e44e0c9b4960b766f230c1279/opencv_contrib_python-4.10.0.84-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/6c/fab8113424af5049f85717e8e527ca3773299a3c6b02506e66436e19874f/opencv_python-4.10.0.84-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/57/97/73f756c338c1d86bb802ee88c3cab015ad7ce4b838f8a24f16b676b1ac7c/pillow-11.0.0-cp312-cp312-win_amd64.whl
@@ -839,9 +839,9 @@ packages:
   timestamp: 1707226412944
 - kind: pypi
   name: ok-script
-  version: 0.0.309
-  url: https://files.pythonhosted.org/packages/af/0e/11f647d5a3b9ae72a4542b9ac896769cc0a5466c6ae2a3ecfb5e973b6cde/ok_script-0.0.309-cp312-cp312-win_amd64.whl
-  sha256: 527b228985d4f6b4f2dda70c662e6c4244c5687574d3b91dd35622524917a34f
+  version: 0.0.326
+  url: https://files.pythonhosted.org/packages/59/b7/5330d4058febe8c0b5bb40fdacb31d987630f0a438d37b4760d05ec09f98/ok_script-0.0.326-cp312-cp312-win_amd64.whl
+  sha256: 9c10cf1d91a853ef0f923320c6b7888c36738d592c1516e7038d9953fd890864
   requires_dist:
   - pywin32>=306
   - darkdetect>=0.8.0
@@ -943,20 +943,20 @@ packages:
 - kind: conda
   name: packaging
   version: '24.2'
-  build: pyhd8ed1ab_0
+  build: pyhff2d567_1
+  build_number: 1
   subdir: noarch
   noarch: python
-  url: https://conda.anaconda.org/conda-forge/noarch/packaging-24.2-pyhd8ed1ab_0.conda
-  sha256: 0f8273bf66c2a5c1de72312a509deae07f163bb0ae8de8273c52e6fe945a0850
-  md5: c16469afe1ec91aaafcf4bea966c0465
+  url: https://conda.anaconda.org/conda-forge/noarch/packaging-24.2-pyhff2d567_1.conda
+  sha256: 74843f871e5cd8a1baf5ed8c406c571139c287141efe532f8ffbdafa3664d244
+  md5: 8508b703977f4c4ada34d657d051972c
   depends:
   - python >=3.8
   license: Apache-2.0
-  license_family: APACHE
   purls:
   - pkg:pypi/packaging?source=hash-mapping
-  size: 60345
-  timestamp: 1731457074006
+  size: 60380
+  timestamp: 1731802602808
 - kind: pypi
   name: pillow
   version: 11.0.0
